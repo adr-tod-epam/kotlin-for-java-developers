@@ -1,0 +1,55 @@
+# ====================================================================
+# Gradle Build and Cache Outputs (Subprojects & Root)
+# ====================================================================
+# Excludes 'build/' directories at any depth (inside any project)
+**/build/
+# Excludes Gradle's internal caches and execution data
+**/.gradle/
+# Excludes Gradle wrapper generated files (if you want developers to use local Gradle)
+# Note: If you want to share the Gradle wrapper, uncomment the line below:
+# !**/gradle-wrapper.jar
+
+# ====================================================================
+# IntelliJ IDEA IDE Files (Subprojects & Root)
+# ====================================================================
+# Excludes the .idea/ configuration folder for all projects
+**/.idea/
+# Excludes individual IntelliJ project files
+**/*.iml
+**/*.ipr
+**/*.iws
+# Excludes out directories (used by IntelliJ's built-in compiler)
+**/out/
+
+# ====================================================================
+# Kotlin-specific & Compiler Temporary Files
+# ====================================================================
+# Kotlin Multiplatform / JS outputs
+**/.kotlin/
+# Kotlin Daemon and compiler status files
+**/kotlinc/
+
+# ====================================================================
+# Local / Environment-specific Configurations
+# ====================================================================
+# Local Gradle configuration (credentials, local paths)
+**/gradle.properties
+# If you want to keep a template gradle.properties, you can keep a 'gradle.properties.template' tracked instead.
+
+# Local environment variables
+**/.env
+**/.env.*
+!**/.env.example
+
+# Local SDK paths (Android/Java)
+**/local.properties
+
+# ====================================================================
+# Operating System Garbage
+# ====================================================================
+# macOS noise
+**/.DS_Store
+**/Thumbs.db
+
+# Windows noise
+**/desktop.ini
